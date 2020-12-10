@@ -5,7 +5,6 @@ function preload()
 {
   dog = loadImage("images/dogImg.png");
  happyDog = loadImage("images/dogImg1.png");
- foodS.addimage("images/milk.png");
 }
 
 function setup() {
@@ -27,6 +26,8 @@ function setup() {
 
 function draw() {  
 background(0,200,100);
+stroke(5);
+fill(0);
 foodObj.display();
 fedTime=database.ref('feedTime');
 fedTime.on("value", function(data){

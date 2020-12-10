@@ -4,7 +4,7 @@ class Food{
         this.lastFed;
         this.image=loadImage("images/milk.png");
     }
-    updatefoodstock(foodStock){
+    updatefoodStock(foodStock){
         this.foodStock= foodStock;
     }
     getFedtime(lastFed){
@@ -25,7 +25,7 @@ class Food{
         var x= 80;
         var y=100;
         imageMode(CENTER);
-        image(this.image, 720,220,70,70);
+        image(this.image, 80,50,70,70);
         if(this.foodStock!=0){
             for(var i=0; i<foodStock; i++){
                 if(i%10===0){
